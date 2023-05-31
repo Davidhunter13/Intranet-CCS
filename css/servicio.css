@@ -1,0 +1,92 @@
+
+
+/* MAIN  */
+
+main{
+    width: 100%;
+}
+
+/* Seccion1 */
+
+.Seccion1 {
+    background-image: url("../img/servicio/Fondo-azul-pc.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.Seccion1 .Seccion1Centro{
+    height: 100%;
+}
+
+.Seccion1 .Seccion1Row {
+    display: flex;
+    place-content: initial;
+    height: 100%;
+    
+}
+
+.Seccion1 .Seccion1Col1{
+    height: 80%;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    place-content: center;
+}
+
+
+.Seccion1 .Seccion1Col1 h1 {
+    font-family: var(--letra-Titulo);
+    font-size: 6rem;
+    color: var(--blanco);
+}
+
+.Seccion1 .Seccion1Col1 h3{
+    font-family: var(--letra-Parrafo);
+    font-size: 3rem;
+    color: var(--blanco);
+    font-weight: 400;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+}
+
+.Seccion1 .Seccion1Col1  h3 .Seccion1Col1Redondo{
+    background-color: var(--blanco);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.Seccion1 .Seccion1Col1 .Seccion1Col1Img{
+    width: 100%;
+    height: 300px;
+}
+
+.Seccion1 .Seccion1Col1 .Seccion1Col1Img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.Seccion1 .Seccion1Col2{
+    display: flex;
+    place-content: center;
+    place-items: initial;
+    height: 80%;
+}
+
+.Seccion1 .Seccion1Col2 .Seccion1Col2Img{
+    width: 100%;
+    height: 100%;
+}
+
+.Seccion1 .Seccion1Col2 .Seccion1Col2Img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

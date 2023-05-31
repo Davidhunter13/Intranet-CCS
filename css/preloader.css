@@ -1,0 +1,55 @@
+/* PRELOAD */
+
+.preload {
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: 99999;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    transition:1s ease-in-out;
+    opacity: 1;
+    animation: changeColor 10s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+      background-color: var(--preload);
+    }
+    20% {
+      background-color: var(--blanco);
+    }
+    100% {
+      background-color: var(--preload);
+    }
+  }
+
+.preload img{
+    width: 500px;
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.575));
+}
+
+.hiden {
+    opacity: 0;
+    display: none;
+  }
+
+
+  header.show {
+    opacity: 1;
+  }
+
+main.show {
+    opacity: 1;
+  }
+
+  header {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  main{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }

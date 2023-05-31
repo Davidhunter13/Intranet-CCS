@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+    --letra-Titulo: 'Lexend', sans-serif;
+    --letra-Parrafo:'Poppins', sans-serif;
+    --verde-Claro:#80BC00;
+    --verde-Oscuro:#00953B;
+    --gris:#808080;
+    --blanco:#fff;
+    --azul-oscuro:#010f53;
+    --preload:#f5f4f4;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* MAIN  */
+
+main{
+    width: 100%;
+}
+
+/* Seccion1 */
+
+.Seccion1 {
+    background-image: url("../img/inicio/Banner_home_background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+.Seccion1 .Seccion1Centro{
+    height: 100%;
+}
+
+.Seccion1 .Seccion1Row {
+    display: flex;
+    place-items: center;
+    height: 100%;
+}
+
+
+.Seccion1 .Seccion1Col2{
+    display: flex;
+    place-content: center;
+    place-items: initial;
+    height: 100%;
+    width: 100%;
+}
+
+.Seccion1 .Seccion1Col2 .Seccion1Col2Img{
+    margin-top: 80px;
+    width: 100%;
+    height: 80%;
+}
+
+.Seccion1 .Seccion1Col2 .Seccion1Col2Img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* INICIO */
+.inico{
+
+    width: 100%;
+    position: relative;
+    margin: 0px auto 100px auto;
+}
+
+.inico .img{
+    width: 100%;
+    height:1000px;
+    position: absolute;
+    top: -140px;
+    z-index: -100;
+}
+
+.inico .img img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+ 
+}
+
+.recurso{
+    position: absolute;
+}
+
+@keyframes escala {
+    0% {transform: scale(1.08);}
+    50% {transform: scale(1);}
+    100% {transform: scale(1.08);}
+}
+
+.recurso1{
+    bottom: -80px;
+    left: 100px;
+    width: 200px;
+    animation: escala 5s linear infinite;
+}
+
+.recurso2{
+    top: 150px;
+    right:250px;
+    width: 80px;
+    animation: escala 4s linear infinite;
+}
+
+.recurso3{
+    bottom: 0px;
+    right:200px;
+    width: 130px;
+    animation: escala 3s linear infinite;
+}
+
+.iniciocol{
+    padding:20px;
+    z-index: 1 ;
+}
+
+.iniciocol h1 {
+    font-family: var(--letra-Titulo);
+    color: var(--gris);
+    font-size: 3.2rem;
+    margin: 0px auto 120px auto;
+    text-align: center;
+    
+}
+
+.iniciocol h1 span{
+    background-color: var(--verde-Oscuro);
+    color: var(--blanco);
+    padding: 5px 20px;
+}
+
+.iniciocol p {
+    font-family: var(--letra-Parrafo);
+    color: var(--gris);
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 40px;
+}
+
+
+/* SECCION CAJAS */
+
+.cajaCentro {
+    margin: 200px auto 50px auto;
+}
+
+.cajarow {
+    height: 100%;
+    
+}
+
+.cajarowCaja {
+    padding: 20px;
+    height: 100%;
+}
+
+.cajafuera {
+    background:#f5f5f5 ;
+    padding: 20px;
+    height: 100%;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.295);
+    transition: 0.3s ease-in-out ;
+    cursor: pointer;
+}
+
+.cajafuera::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(6,151,56);
+    background: linear-gradient(90deg, rgba(6,151,56,1) 30%, rgba(124,186,1,1) 70%);
+    border-radius: 30px;
+    opacity: 0;
+    transition: 0.3s ease-in-out ;
+    
+}
+
+.cajadentro{
+    background-color:#f5f5f5 ;
+    padding: 30px;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    
+} 
+
+.cajadentro a {
+    position: absolute;
+    background: #e0e0e0;
+    padding: 20px;
+    bottom: -40px;
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+    color: var(--gris);
+    font-family: var(--letra-Parrafo);
+    font-size: 1.2rem;
+    font-weight: 600;    
+}
+
+.cajadentro a::before{
+    position: absolute;
+    content: "VER MÁS";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(6,151,56);
+    background: linear-gradient(90deg, rgba(6,151,56,1) 30%, rgba(124,186,1,1) 70%);
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.3s ease-in-out ;
+    color: var(--blanco);
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.cajadentro .imagen{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.cajarowCaja:nth-child(1) .cajadentro  .imagen  img {
+    object-fit: contain;
+    width: 170px;
+}
+
+.cajarowCaja:nth-child(2) .cajadentro  .imagen  img {
+    object-fit: contain;
+    width: 80px;
+}
+
+.cajarowCaja:nth-child(3) .cajadentro  .imagen  img {
+    object-fit: contain;
+    width: 80px;
+}
+
+.cajadentro p {
+    color: var(--gris);
+    font-family: var(--letra-Parrafo);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.cajafuera:hover a::before{
+    opacity: 1;
+}
+
+.cajafuera:hover{
+    transform: scale(1.05);
+}
+
+.cajafuera:hover::before {
+    opacity: 1;
+  }
+  
+
+
+  /* MURO  */
+
+  .Muro{
+    background-color: #f5f5f5;
+    margin: 150px auto;
+    overflow: hidden;
+  }
+
+  /* .MuroRow {
+    background: #00953B;
+  } */
+
+  .MuroTxt {
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    place-content: center;
+    place-items: center;
+    
+  } 
+
+  .MuroTxt h2 {
+    font-family: var(--letra-Titulo);
+    color: var(--gris);
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .MuroTxt p {
+    font-family: var(--letra-Titulo);
+    color: var(--gris);
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: 500;
+  }
+
+  .MuroTxt a {
+    position: relative;
+    background: #e0e0e0;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+    color: var(--gris);
+    font-family: var(--letra-Parrafo);
+    font-size: 1.2rem;
+    font-weight: 600;   
+    transition: 0.3s ease-in-out ; 
+}
+
+.MuroTxt a::before{
+    position: absolute;
+    content: "VER MÁS";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(6,151,56);
+    background: linear-gradient(90deg, rgba(6,151,56,1) 30%, rgba(124,186,1,1) 70%);
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.3s ease-in-out ;
+    color: var(--blanco);
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.MuroTxt a:hover {
+    transform: scale(1.05);
+}
+.MuroTxt a:hover::before{
+    opacity: 1;
+}
+
+  .MuroImg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: right;
+    padding: 2px;
+  }
+
+  .MuroImg img {
+    position: relative;
+    filter:  brightness(80%) blur(1px);
+    transition: 0.3s ease-in-out;
+    object-fit: cover;
+    margin: -2px;
+    width: 390px; 
+    height: 390px;/* establece una anchura máxima de 200px para las imágenes */
+    cursor: pointer;
+  }
+  
+  .MuroImg img:hover{
+    filter: brightness(100%) blur(0px);
+    transform: scale(1.03);
+    z-index: 99;
+  }
+
+  /* CULTURA */
+
+  .cultura{
+    background: rgb(6,151,56);
+    background: linear-gradient(90deg, rgba(6,151,56,1) 30%, rgba(124,186,1,1) 70%);
+    padding: 80px 0px;
+    position: relative;
+  }
+  
+  .cultura img{
+    position: absolute;
+    width: 800px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+
+  .rowCultura{
+    display: flex;
+    place-content: center;
+    justify-content: right;
+    padding: 100px;
+    background: #e1f2df;
+    border-radius: 30px;
+    width:85%;
+    margin: auto;
+    position: relative;
+  }
+
+  .rowCultura::after{
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    background-image: url("../img/Cultura/recurso_02_cultura.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center ;
+    width:600px;
+    height:100px;
+  }
+
+  .rowCultura::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("../img/Cultura/recurso_03_cultura.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:bottom ;
+    width:400px;
+    height:400px;
+  }
+
+
+  .culturaCss{
+    width: 50%;
+    display: flex ;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    margin-right: 100px;
+  }
+
+  .culturaCss h2 {
+
+    font-family: var(--letra-Titulo);
+    color: var(--gris);
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .culturaCss p {
+    font-family: var(--letra-Titulo);
+    color: var(--gris);
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: 500;
+  }
+
+  
+  .culturaCss a {
+    position: relative;
+    background: #e0e0e0;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+    color: var(--gris);
+    font-family: var(--letra-Parrafo);
+    font-size: 1.2rem;
+    font-weight: 600;   
+    transition: 0.3s ease-in-out ; 
+}
+
+.culturaCss a::before{
+    position: absolute;
+    content: "VER MÁS";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(6,151,56);
+    background: linear-gradient(90deg, rgba(6,151,56,1) 30%, rgba(124,186,1,1) 70%);
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.3s ease-in-out ;
+    color: var(--blanco);
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.culturaCss a:hover {
+    transform: scale(1.05);
+}
+.culturaCss a:hover::before{
+    opacity: 1;
+}
